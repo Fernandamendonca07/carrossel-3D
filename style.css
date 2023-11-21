@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: ali;
+    src: url(modern_avenue/Modern\ Avenue\ Demo.otf);
+}
+
+body{
+    margin: 0;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+h1{
+    text-align: center;
+    font-family: ali;
+    font-size: 220%;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards;
+    
+}
+
+.imagem{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+}
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
+
+    
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://segredosdomundo.r7.com/wp-content/uploads/2021/03/chapeleiro-maluco-conheca-a-verdadeira-historia-por-tras-do-personagem.jpg);
+     transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://pm1.aminoapps.com/7458/f3eadd966932ce93fc20624d6864411b6d2b5ec3r1-640-640v2_00.jpg);
+     transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://www.fatosdesconhecidos.com.br/wp-content/uploads/2021/12/rainha-de-copas-2-848x635.jpg);
+     transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://assets.teenvogue.com/photos/56393ba631590829145108e5/16:9/w_2560%2Cc_limit/MCDALIN_EC074_H.JPG);
+     transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*T_rqHcoy0nJBIUiK5fjCww.jpeg);
+     transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://i.pinimg.com/originals/9b/64/b0/9b64b07727c025afbbde64c89c9ba3de.jpg);
+     transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://gatices.files.wordpress.com/2010/09/gato_cheshire_6.jpg);
+     transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://media.wired.com/photos/59346c40ca941e4d0cb7ae83/master/pass/dormouse_1000.jpg);
+     transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+    background-image: url(https://2.bp.blogspot.com/_Ewg7WuXr9f4/S7jTFVTCMnI/AAAAAAAAF9E/lMN3U5xegbA/s1600/lebre.jpg);
+     transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    
+}
